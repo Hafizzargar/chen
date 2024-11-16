@@ -55,12 +55,12 @@ document.addEventListener('click', (e) => {
         
         
         async function deleteUser() {
-            // try {
-            //     const response = await axios.post('/deleteuser', { _id });
-            //     return
-            // } catch (error) {
-            //     console.error('Error deleting user:', error);
-            // }
+            try {
+                const response = await axios.post('/deleteuser', { _id });
+                return
+            } catch (error) {
+                console.error('Error deleting user:', error);
+            }
         }
 
         deleteUser();
